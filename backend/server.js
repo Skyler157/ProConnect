@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads')); 
 
 // MongoDB Connection
-mongoose.connect("mongodb+srv://leah:leah007@cluster0.c8pix.mongodb.net/")
+mongoose.connect("")
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
