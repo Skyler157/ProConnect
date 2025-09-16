@@ -1,0 +1,164 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: #f8f8f8;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo h1 {
+  color: tomato;
+  font-weight: 600;
+  font-size: 50px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  color: #171717;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 20px;
+  color: #49557e;
+  border: 1px solid;
+  padding: 10px 30px;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.navbar button:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  font-size: 40px; 
+  color: #49557e; 
+  transition: 0.3s ease;
+}
+
+.profile-icon:hover {
+  color: tomato; 
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium to Large Screens */
+@media (max-width: 1024px) {
+  .navbar {
+    justify-content: space-between;
+    height: auto;
+    padding: 16px 8px;
+  }
+
+  .nav-menu {
+    font-size: 22px;
+    gap: 20px;
+  }
+
+  .navbar .logo h1 {
+    font-size: 40px;
+  }
+
+  .nav-right {
+    gap: 15px;
+  }
+
+  nav {
+    gap: 30px;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  .navbar .logo h1 {
+    font-size: 35px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Extra Small Screens (Mobile devices) */
+@media (max-width: 480px) {
+  .navbar .logo h1 {
+    font-size: 30px;
+  }
+
+  .nav-menu {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .navbar button {
+    font-size: 18px;
+    padding: 12px;
+  }
+}

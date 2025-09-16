@@ -1,0 +1,78 @@
+.job-display {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1800px; /* Added max-width for better control */
+}
+
+.job-display-title {
+  font-size: 2.5rem; /* Slightly reduced for balance */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center; /* Center the title */
+}
+
+.job-display-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+  gap: 25px; /* Adjusted gap */
+  padding: 0;
+}
+
+/* Job item styling for better appearance */
+.job-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.job-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.no-jobs-message {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  grid-column: 1 / -1; /* Span full width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .job-display-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .job-display-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 20px;
+  }
+  
+  .job-display-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .job-display-list {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+  
+  .job-display {
+    padding: 30px 15px;
+  }
+  
+  .job-display-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}

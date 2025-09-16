@@ -1,0 +1,73 @@
+.job-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.job-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.job-item-image {
+  width: 200%;
+  height: 400px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.job-item-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.job-item-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 8px;
+  flex: 1;
+}
+
+.job-item-category {
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.add {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.job-item-info {
+  padding: 20px;
+}
+
+.stars i {
+  color: orange;
+  font-size: 1.3rem;
+}
+
+.job-item-name-rating p {
+  color: #333; 
+  font-weight: bold; 
+}

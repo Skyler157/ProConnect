@@ -1,0 +1,16 @@
+.payment-page {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .payment-page h2 {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .payment-page p {
+    font-size: 18px;
+    color: #555;
+  }
+  

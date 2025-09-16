@@ -1,0 +1,45 @@
+.business-showcase {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .showcase-item {
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .showcase-item i {
+    font-size: 48px; 
+    color: #007bff; 
+    margin-bottom: 20px; 
+  }
+  
+  .showcase-item h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .showcase-item p {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .business-showcase {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .showcase-item {
+      margin: 10px 0;
+    }
+  }
